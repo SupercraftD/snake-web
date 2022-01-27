@@ -1,1 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Canvas</title>
+</head>
+<body>
+    <canvas id='canvas' width='600px' height='600px'></canvas>
+    <script>
+        var ctx;
+        var canvas = document.getElementById('canvas');
+        if (canvas.getContext){
+            ctx = canvas.getContext('2d');
 
+            ctx.fillRect(100,100,50,50)
+        }
+    </script>
+</body>
+</html>
